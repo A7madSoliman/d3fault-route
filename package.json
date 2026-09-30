@@ -3,6 +3,14 @@
   "version": "0.1.0",
   "description": "Multi-provider AI model routing for Agy, Codex, and Claude with Jev-based per-turn decisions",
   "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/A7madSoliman/d3fault-route.git"
+  },
+  "homepage": "https://github.com/A7madSoliman/d3fault-route#readme",
+  "bugs": {
+    "url": "https://github.com/A7madSoliman/d3fault-route/issues"
+  },
   "bin": {
     "d3-agy": "bin/jev-agy.mjs",
     "d3-codex": "bin/jev-codex.mjs",

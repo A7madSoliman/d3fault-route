@@ -43,14 +43,13 @@ These tiers are provider-neutral decisions. Agy maps them to Gemini models, Code
 
 ## Quick start
 
-Requires Node.js 20.12+, the native CLI for each provider you plan to use, and that provider's own authentication. From a local checkout:
+Requires Node.js 20.12+, the native CLI for each provider you plan to use, and that provider's own authentication. After npm publication, install globally:
 
 ```bash
-npm install
-npm link
+npm install -g d3fault-route
 ```
 
-This package has not been published to npm. Configure your Jev key outside the repository with `d3-config key set`, then launch an interactive provider:
+Configure your Jev key outside the repository with `d3-config key set`, then launch an interactive provider:
 
 ```bash
 d3-agy
@@ -129,6 +128,15 @@ Keep `JEV_API_KEY` and other secrets outside the repository; do not paste or com
 A shared routing and policy core decides provider-neutral tiers. Provider-owned adapters validate model choices. Each provider keeps its own transport or process integration to preserve its session behavior.
 
 ## Development
+
+From a local checkout, link the commands globally:
+
+```bash
+npm install
+npm link
+```
+
+Run the test suite:
 
 ```bash
 npm test
