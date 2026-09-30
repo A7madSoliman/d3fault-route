@@ -1,0 +1,43 @@
+{
+  "name": "d3fault-route",
+  "version": "0.1.0",
+  "description": "Multi-provider AI model routing for Agy, Codex, and Claude with Jev-based per-turn decisions",
+  "type": "module",
+  "bin": {
+    "d3-agy": "bin/jev-agy.mjs",
+    "d3-codex": "bin/jev-codex.mjs",
+    "d3-claude": "bin/jev-claude.mjs",
+    "d3-config": "bin/jev-config.mjs",
+    "d3-explain": "bin/jev-explain.mjs"
+  },
+  "scripts": {
+    "test": "node --test \"test/**/*.test.mjs\"",
+    "prepublishOnly": "npm test"
+  },
+  "files": [
+    ".claude/skills",
+    "bin",
+    "skills",
+    "src",
+    "README.md"
+  ],
+  "keywords": [
+    "ai",
+    "cli",
+    "model-routing",
+    "gemini",
+    "codex",
+    "claude"
+  ],
+  "engines": {
+    "node": ">=20.12"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@typesafe-ai/sdk": "^0.6.0"
+  }
+}
